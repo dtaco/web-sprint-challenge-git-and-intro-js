@@ -370,7 +370,7 @@ Use artistByCountry to do the following:
 
 function artistByCountry(array, theirNationality){
   
-  artistNationality = [];
+ const artistNationality = [];
   
   for (let i = 0; i < array.length; i++){
     if (array[i].nationality === theirNationality){
@@ -380,6 +380,8 @@ function artistByCountry(array, theirNationality){
 
   return artistNationality;
 }
+
+console.log(artistByCountry(artists, "Spanish"))
 
 
 
